@@ -1,0 +1,75 @@
+GET http://www.google.com
+
+###
+
+DELETE http://localhost:4000/user/63ec7fb6e43ab8be6b392f6b
+
+###
+
+GET http://localhost:4000/user
+
+###
+
+GET http://localhost:4000/user/search?q=glecybenedicto
+###
+
+GET http://localhost:4000/user/63ec8cdbbce2891b19e5e90a
+
+###
+POST http://localhost:4000/user
+Content-Type: application/json
+
+{
+    "username": "glecybenedicto",
+    "email": "glecy_g@gmail.com",
+    "password": "imglecy",
+    "firstname": "Glecy Jade",
+    "lastname": "Benedicto"
+}
+
+###
+
+DELETE http://localhost:4000/user/63f31535fb38a5e797613a8d
+Content-Type: application/json
+
+###
+
+GET http://localhost:4000/transaction
+
+###
+
+GET http://localhost:4000/transaction/search?q=Gcash
+
+###
+POST http://localhost:4000/transaction
+Content-Type: application/json
+
+{
+    "amount": "300",
+    "transaction_type": "Gcash",
+    "hashkey": "djk23aSDs0"
+}
+
+###
+
+DELETE http://localhost:4000/transaction/63ec7fb8e43ab8be6b392f6d
+Content-Type: application/json
+
+###
+
+GET http://localhost:4000/wallet
+
+###
+
+POST http://localhost:4000/wallet
+Content-Type: application/json
+
+{
+    "hashWallet": "pWsi41jM2n",
+    "type": "Gcash"
+}
+
+###
+
+DELETE http://localhost:4000/wallet/63ec7fbae43ab8be6b392f6f
+Content-Type: application/json
